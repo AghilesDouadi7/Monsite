@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Aghiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* En-tête avec photo et titre */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: left;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        /* Photo en haut à droite */
+        .profile-photo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        /* Section principale */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        /* Bouton pour ouvrir la fenêtre des travaux */
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #00A8CC;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #007A99;
+        }
+
+        /* Liens vers d'autres pages */
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #00A8CC;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #007A99;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- En-tête -->
+<header>
+    <h1>Bienvenue sur mon site !</h1>
+    <img src="/home/douadiag/Bureau/photo-d_identite-Douadi.jpg" alt="Photo de profil" class="profile-photo">
+</header>
+
+<!-- Section principale -->
+<main>
+    <h2>Présentation</h2>
+    <p>Je suis Aghiles, doctorant en microélectronique et sécurité matérielle au laboratoire TIMA à Grenoble, diplômé d'un master 2 à l'Université de Dijon en 2022. Convaincu de l'importance d'aider les autres, je propose des cours en ligne pour les étudiants en physique et électronique, ainsi que du soutien scolaire pour les élèves des niveaux inférieurs..
+    </p>
+
+    <!-- Bouton pour ouvrir la fenêtre des travaux -->
+    <button onclick="ouvrirFenetreTravaux()">Voir mes travaux</button>
+
+    <!-- Liens vers d'autres plateformes -->
+    <div class="links">
+        <a href="https://github.com/AghilesDouadi7" target="_blank">Mon GitHub</a>
+        <a href="https://www.linkedin.com/in/aghiles-douadi-hardware-security-pufs-sram-mosfet-vhdl-python-cadence-isfet-r/" target="_blank">Mon LinkedIn</a>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Aghiles - Tous droits réservés</p>
+</footer>
+
+<!-- Script pour ouvrir une fenêtre pop-up des travaux -->
+<script>
+    function ouvrirFenetreTravaux() {
+        window.open("travaux1.html", "Mes Travaux", "width=600,height=400");
+    }
+</script>
+
+</body>
+</html>
